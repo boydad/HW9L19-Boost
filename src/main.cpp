@@ -30,6 +30,11 @@ public:
     
     auto tmp = * (i + n);
     std::is_same<decltype(i[n]), decltype(tmp)>();
+    *i;
+    *i++;
+    *++i;
+    *i--;
+    *--i;
     
     a == b;
     a != b;
